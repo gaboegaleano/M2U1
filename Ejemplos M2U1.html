@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos M2U1</title>
+
+</head>
+
+<body>
+    <!--Creo BOTON con nombre ENVIAR-->
+    <p>
+        <button>Enviar</button>
+    </p>
+
+    <!--Creo link con nombre MOZILLA-->
+    <a href="https://developer.mozilla.org">MOZILLA</a>
+
+
+    <!--Creo Formulario para completar y enviar mensaje con nombre + Boton ENVIAR-->
+    <form action="/enviar" id="formulario">
+        <p>
+            <label>Nombre: <input name="nombre" type="text"></label>
+        </p>
+        <p>
+            <label>Mensaje: <textarea name="mensaje" cols="30" rows="10"></textarea></label>
+        </p>
+        <p>
+            <button>Enviar</button>
+        </p>
+    </form>
+
+    <script>
+     //FUNCIONES
+
+        function saludar(nombre2) {
+            alert('Hola ' + nombre2)
+        }
+        saludar('Gabriel')
+        saludar('Eduardo')
+//---------------------------------------------------------------
+        let nombre = prompt('¿Cual es tu nombre?');
+        saludo();
+
+        function saludo() {
+            alert('Hola ' + nombre)
+        }
+//---------------------------------------------------------------
+        function numero_al_cubo (numero){
+            return numero*numero*numero;
+        }
+
+        let tres_al_cubo = numero_al_cubo(2);
+        alert(tres_al_cubo);
+//---------------------------------------------------------------
+        let numero1 = parseInt(prompt('Ingrese un Numero:'));
+        let numero2 = parseInt(prompt('Ingrese otro numero:'));
+        suma();
+        resta();
+        multiplicacion();
+        division();
+
+
+        function suma() {
+            let resultado = numero1 + numero2;
+            console.log('El resultado de la suma es ', resultado)
+            alert(`El Resultado de la suma es ${resultado}`);
+        }
+
+        function resta() {
+            let resultado = numero1 - numero2;
+            console.log('El resultado de la resta es ', resultado)
+            alert(`El Resultado de la resta es ${resultado}`);
+        }
+
+        function multiplicacion() {
+            let resultado = numero1 * numero2;
+            console.log('El resultado de la multiplicacion es ', resultado)
+            alert(`El Resultado de la multiplicacion es ${resultado}`);
+        }
+
+        function division() {
+            let resultado = numero1 / numero2;
+            console.log('El resultado de la division es ', resultado)
+            alert(`El Resultado de la division es ${resultado}`);
+        }
+    </script>
+
+</body>
+
+</html>

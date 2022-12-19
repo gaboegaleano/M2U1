@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M2U1 Ejercicio 1</title>
+    <link rel="stylesheet" href="M2U1_EJ1.css"><!--Relaciono Archivo CSS con este JS-->
+</head>
+
+<body>
+    <div class ="cuadrado1" onclick="cambioDeFondo('red')"></div>
+    <div class ="cuadrado2" onclick="cambioDeFondo('blue')"></div>
+    <div class ="cuadrado3" onclick="cambioDeFondo('green')"></div>
+</body>
+
+<script>
+function cambioDeFondo (color){
+document.querySelector('body').style.background = color;
+}
+</script>
+</html>

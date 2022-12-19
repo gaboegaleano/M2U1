@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M2U1 Ejercicio 2</title>
+</head>
+
+<body>
+    <textarea id="letras" cols="30"
+        rows="10"></textarea><!--Creacion de Form Multilineas con 30columnas y 19filas y asignacion de id "Letras"-->
+    <div>Caracteres: <span id="contador"></span></div><!--En este div tengo el titulo CARACTERES y me aparecerà el numero de contador-->
+
+    <script>
+        var letras2 = document.getElementById('letras'); /*creo Variable para llamar id 'letras'*/
+        var contador2 = document.getElementById('contador');/*creo Variable para llamar id 'contador'*/
+
+        letras.addEventListener('keyup', function () {/*Asignacion de evento al detectar accion de keyup para llevar adelante una funcion*/
+            contador.innerText = letras.value.length;/*Hago leer id "letras" y que informe cantidad de caracteres en id "contador"*/
+        })
+        
+    </script>
+</body>
+
+</html>

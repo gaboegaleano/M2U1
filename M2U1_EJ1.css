@@ -1,0 +1,32 @@
+.cuadrado1 {
+    position: relative;
+    top: 50px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    background: red;
+    display: inline-flex;
+}
+
+.cuadrado2 {
+    position: relative;
+    top: 50px;
+    left: 75px;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    background: blue;
+    display: inline-flex;
+}
+
+.cuadrado3 {
+    position: relative;
+    top: 50px;
+    left: 100px;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    background: green;
+    display: inline-flex;
+}
